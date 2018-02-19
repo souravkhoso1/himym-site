@@ -61,7 +61,7 @@
   	    $("#submitemail").click(function(){
     			$.ajax({
       				type: "POST",
-      				url: "//formspree.io/a{{- site.email -}}",
+      				url: "//formspree.io/{{- site.email -}}",
       				data:{email:$("#emailid").val()},
       				success:function(data){
       						$("#emailform").html("Email Submitted to our admins.");
